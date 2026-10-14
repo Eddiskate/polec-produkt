@@ -1,13 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Blog — {{ site_name }}{% endblock %}
+{% block meta_description %}Poradniki: jak wybrać hosting, narzędzia i stronę dla firmy.{% endblock %}
 
 {% block body %}
 <h1 class="page-title">Blog</h1>
-<p class="lede">Poradniki i porównania — treści z web-portalu.</p>
+<p class="lede">Krótkie poradniki i porównania — bez lania wody.</p>
 
 {% if posts is empty %}
-    <p class="empty-note">Brak wpisów albo API bloga nie jest jeszcze skonfigurowane (BLOG_API_URL / BLOG_API_KEY).</p>
+    <p class="empty-note">Wkrótce pierwsze wpisy. Tymczasem zajrzyj do <a href="{{ path('app_products') }}">porównań produktów</a>.</p>
 {% else %}
     <ul class="post-list">
         {% for post in posts %}

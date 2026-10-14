@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Zgłoś produkt — {{ site_name }}{% endblock %}
+{% block meta_description %}Masz produkt dla małych firm? Zgłoś go do katalogu Poleć Produkt.{% endblock %}
 
 {% block body %}
 <h1 class="page-title">Zgłoś produkt</h1>
-<p class="lede">Chcesz, żebyśmy rozważyli Twój produkt w katalogu? Napisz — na start przyjmujemy zgłoszenia mailowo. Płatne listingi i formularz z weryfikacją dołączymy w kolejnej fazie.</p>
+<p class="lede">Masz hosting, narzędzie albo usługę, która naprawdę pomaga małym firmom? Napisz — sprawdzimy, czy pasuje do katalogu. Na razie wystarczy mail.</p>
 <div class="cta-row">
-    <a class="btn btn-primary" href="mailto:{{ contact_email }}?subject=Zgłoszenie%20produktu%20—%20polec-produkt.pl">Napisz na {{ contact_email }}</a>
+    <a class="btn btn-primary" href="mailto:{{ contact_email }}?subject=Zgłoszenie%20produktu%20—%20polec-produkt.pl">Napisz do nas</a>
 </div>
 {% endblock %}

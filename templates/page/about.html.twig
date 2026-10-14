@@ -1,12 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}O nas — {{ site_name }}{% endblock %}
+{% block meta_description %}Kim jesteśmy i jak pomagamy wybrać hosting oraz narzędzia do firmy — bez marketingowego szumu.{% endblock %}
 
 {% block body %}
 <h1 class="page-title">O nas</h1>
-<div class="prose">
-    <p>{{ site_name }} to katalog szczerych poleceń — zaczynamy od hostingu i narzędzi dla małych firm, potem dokładamy kolejne kategorie (tam, gdzie jest uczciwy program afiliacyjny).</p>
-    <p>Część linków to linki partnerskie: gdy kupisz przez nie usługę, możemy dostać prowizję. Nie wpływa to na cenę, którą płacisz. BlackPage to nasz własny produkt — zarabiamy na nim bezpośrednio, nie przez afiliację.</p>
-    <p>Kontakt: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+<div class="about-panel prose">
+    <p>Szukasz hostingu, narzędzi albo gotowej strony dla firmy i nie chcesz przepłacać czasu na dziesiątki porównań? {{ site_name }} zbiera opcje w jednym miejscu — z plusami, minusami i jasnym „dla kogo to ma sens”.</p>
+    <p>Zaczynamy od rzeczy, które najczęściej wybierają małe firmy na start online. Z czasem dokładamy kolejne kategorie, gdy da się uczciwie porównać oferty.</p>
+    <p>Jeśli klikniesz link partnerski i coś kupisz, możemy dostać prowizję — bez wpływu na Twoją cenę. Gdy polecamy BlackPage, mówimy wprost: to usługa naszego zespołu, nie zewnętrzny hosting.</p>
+    <p>Pytanie albo sugestia? Napisz: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
 </div>
 {% endblock %}

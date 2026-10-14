@@ -3,14 +3,14 @@ products:
     name: dhosting.pl
     category: hosting
     categoryLabel: Hosting
-    summary: Hosting z CloudLinux i AutoScaler — dobry wybór, gdy strona rośnie i nie chcesz ręcznie skalować zasobów.
+    summary: Hosting, który dogania ruch na stronie — dobre, gdy firma rośnie i nie chcesz ręcznie dokupować mocy.
     pros:
-      - AutoScaler zasobów przy większym ruchu
-      - Solidne wsparcie techniczne po polsku
-      - Program partnerski z prowizją od odnowień
+      - Zasoby rosną wraz z ruchem (AutoScaler)
+      - Wsparcie po polsku, gdy coś się wysypie
+      - Sensowny wybór pod strony i sklepy
     cons:
-      - Cena wyższa niż u budżetowych hostów
-      - Panel może być przytłaczający na start
+      - Droższy niż budżetowe pakiety „na start”
+      - Panel bywa gęsty dla kompletnych nowicjuszy
     affiliateUrl: https://dhosting.pl/
     ctaLabel: Sprawdź dhosting.pl
     featured: true
@@ -20,14 +20,14 @@ products:
     name: home.pl
     category: hosting
     categoryLabel: Hosting
-    summary: Duży polski hosting z szeroką ofertą domen, sklepów i kreatorów — wygodny, gdy chcesz wszystko w jednym miejscu.
+    summary: Wszystko w jednym: domena, hosting, czasem sklep albo kreator — wygodne, gdy chcesz szybko wystartować.
     pros:
-      - Bogata oferta domen i dodatków
-      - Kreator stron i sklepy w ekosystemie
-      - Znana marka, łatwy onboarding
+      - Duży wybór domen i dodatków
+      - Znana marka, prosty start
+      - Ekosystem pod stronę i sklep
     cons:
-      - Parametry hostingu bywają przeciętne w relacji cena/moc
-      - Upselling w panelu bywa intensywny
+      - Nie zawsze najlepszy stosunek cena/moc
+      - W panelu łatwo o dodatkowe usługi
     affiliateUrl: https://home.pl/
     ctaLabel: Sprawdź home.pl
     featured: true
@@ -37,14 +37,14 @@ products:
     name: VH.PL
     category: hosting
     categoryLabel: Hosting
-    summary: Hosting często polecany w polskiej społeczności — proste pakiety i atrakcyjny program partnerski.
+    summary: Proste pakiety pod wizytówkę i małą firmę — bez enterprise’owego balastu.
     pros:
-      - Przejrzyste pakiety WWW
-      - Wysoka prowizja partnerska (dla wydawców)
-      - Dobre na strony wizytówkowe i małe firmy
+      - Przejrzyste oferty WWW
+      - Dobry na stronę firmową na start
+      - Często polecany w polskiej społeczności
     cons:
-      - Mniej „enterprise” niż najwięksi gracze
-      - Warto sprawdzić aktualne limity przed migracją
+      - Mniej „dużego” hostingu pod bardzo duże projekty
+      - Przed migracją sprawdź limity pakietu
     affiliateUrl: https://vh.pl/
     ctaLabel: Sprawdź VH.PL
     featured: true
@@ -54,14 +54,14 @@ products:
     name: LH.pl
     category: hosting
     categoryLabel: Hosting
-    summary: Hosting, domeny, SSL i cloud — sensowny wybór pod WordPressa i typowe strony firmowe.
+    summary: Hosting, domeny i SSL — solidna baza pod WordPressa i typową stronę firmową.
     pros:
-      - Reflink + kod rabatowy dla klientów
       - Oferta od hostingu po cloud
       - Obsługa po polsku
+      - Często z kodem rabatowym na start
     cons:
-      - Prowizje partnerskie niższe niż u niektórych konkurentów
       - Warto porównać parametry z dhosting / VH
+      - Nie każdy pakiet pasuje do ciężkiego sklepu
     affiliateUrl: https://www.lh.pl/
     ctaLabel: Sprawdź LH.pl
     featured: false
@@ -71,14 +71,14 @@ products:
     name: cyber_Folks
     category: hosting
     categoryLabel: Hosting
-    summary: Hosting WordPress/WooCommerce oraz kreator _now — dla firm, które chcą szybko wystartować online.
+    summary: Hosting pod WordPress/WooCommerce i kreator stron — gdy chcesz szybko mieć coś online.
     pros:
-      - Optymalizacja pod WordPress
-      - Kreator stron w ofercie
-      - Program cyber_Profit
+      - Dobrze dogadany WordPress
+      - Kreator w ofercie
+      - Wygodny start dla małych firm
     cons:
-      - Model punktowy w programie partnerskim wymaga uwagi
-      - Nie zawsze najtańszy na start
+      - Nie zawsze najtańsza opcja na rynku
+      - Sprawdź, czy wolisz kreator, czy klasyczny WP
     affiliateUrl: https://cyberfolks.pl/
     ctaLabel: Sprawdź cyber_Folks
     featured: false
@@ -88,14 +88,14 @@ products:
     name: BlackPage
     category: strony
     categoryLabel: Strona firmowa
-    summary: Strona firmowa pod klucz — gdy nie chcesz kupować hostingu i składać wszystkiego sam. Nasz produkt.
+    summary: Strona firmowa pod klucz — bez kupowania hostingu i składania wszystkiego po godzinach.
     pros:
-      - Gotowa strona bez majsterkowania przy hostingu
+      - Gotowa strona zamiast majsterkowania
       - SEO i formularze w pakiecie
-      - Wsparcie od zespołu, który zna temat end-to-end
+      - Zespół, który ogarnia temat end-to-end
     cons:
-      - To nie jest „sam hosting” — płacisz za usługę i efekt
-      - Mniejsza elastyczność niż własny WordPress na VPS
+      - Płacisz za efekt i obsługę, nie za sam serwer
+      - Mniej „sam sobie grzebię w kodzie” niż własny WP
     affiliateUrl: https://blackpage.pl/
     ctaLabel: Zobacz BlackPage
     featured: true

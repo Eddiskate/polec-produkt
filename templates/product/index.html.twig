@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Produkty — {{ site_name }}{% endblock %}
-{% block meta_description %}Katalog polecanych hostingów i narzędzi. Porównania z jawnymi linkami partnerskimi.{% endblock %}
+{% block meta_description %}Hosting i strony dla firm — porównania z plusami, minusami i konkretnym wyborem.{% endblock %}
 
 {% block body %}
 <h1 class="page-title">Produkty</h1>
-<p class="lede">Kategorie rosną razem z programami afiliacyjnymi — dziś hosting i strony, później m.in. banki czy lokaty.</p>
+<p class="lede">Wybierz kategorię i porównaj oferty. Dziś: hosting oraz strona firmowa pod klucz. Kolejne kategorie dojdą wkrótce.</p>
 
 {% for category, items in grouped %}
     <section class="category-block">
@@ -15,12 +15,12 @@
                 <a class="product-row" href="{{ path('app_product_show', {slug: product.slug}) }}">
                     <div>
                         {% if product.ownProduct|default(false) %}
-                            <span class="badge badge-own">Nasz produkt</span>
+                            <span class="badge badge-own">Strona pod klucz</span>
                         {% endif %}
                         <h3>{{ product.name }}</h3>
                         <p>{{ product.summary }}</p>
                     </div>
-                    <div class="meta-col">Szczegóły →</div>
+                    <div class="meta-col">Zobacz →</div>
                 </a>
             {% endfor %}
         </div>
