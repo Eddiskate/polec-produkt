@@ -1,0 +1,38 @@
+parameters:
+    app.blog.api_url_default: ''
+    app.blog.api_key_default: ''
+    app.contact_email_fallback: 'kontakt@polec-produkt.pl'
+    app.blog.api_url: '%env(default:app.blog.api_url_default:BLOG_API_URL)%'
+    app.blog.api_key: '%env(default:app.blog.api_key_default:BLOG_API_KEY)%'
+    app.contact_email: '%env(default:app.contact_email_fallback:CONTACT_EMAIL)%'
+    app.products_file: '%kernel.project_dir%/config/products.yaml'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    App\Service\ProductRepository:
+        arguments:
+            $productsFile: '%app.products_file%'
+
+    App\Controller\HomeController:
+        arguments:
+            $blogApiUrl: '%app.blog.api_url%'
+            $blogApiKey: '%app.blog.api_key%'
+
+    App\Controller\BlogController:
+        arguments:
+            $blogApiUrl: '%app.blog.api_url%'
+            $blogApiKey: '%app.blog.api_key%'
+
+    App\Twig\AppExtension:
+        arguments:
+            $contactEmail: '%app.contact_email%'

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog — {{ site_name }}{% endblock %}
+
+{% block body %}
+<h1 class="page-title">Blog</h1>
+<p class="lede">Poradniki i porównania — treści z web-portalu.</p>
+
+{% if posts is empty %}
+    <p class="empty-note">Brak wpisów albo API bloga nie jest jeszcze skonfigurowane (BLOG_API_URL / BLOG_API_KEY).</p>
+{% else %}
+    <ul class="post-list">
+        {% for post in posts %}
+            <li>
+                <a href="{{ path('app_blog_post', {slug: post.slug}) }}">{{ post.title|default(post.name|default('Wpis')) }}</a>
+                {% if post.excerpt is defined and post.excerpt %}
+                    <p style="margin:0.35rem 0 0;color:var(--ink-soft);font-size:0.95rem">{{ post.excerpt }}</p>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}

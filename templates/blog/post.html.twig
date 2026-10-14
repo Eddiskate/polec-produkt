@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ post.title|default('Wpis') }} — {{ site_name }}{% endblock %}
+
+{% block body %}
+<span class="badge">Blog</span>
+<h1 class="page-title">{{ post.title|default('Wpis') }}</h1>
+<article class="prose">
+    {{ body_html|raw }}
+</article>
+<p style="margin-top:2rem"><a href="{{ path('app_blog_index') }}">← Wróć do bloga</a></p>
+{% endblock %}

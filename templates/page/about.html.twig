@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}O nas — {{ site_name }}{% endblock %}
+
+{% block body %}
+<h1 class="page-title">O nas</h1>
+<div class="prose">
+    <p>{{ site_name }} to katalog szczerych poleceń — zaczynamy od hostingu i narzędzi dla małych firm, potem dokładamy kolejne kategorie (tam, gdzie jest uczciwy program afiliacyjny).</p>
+    <p>Część linków to linki partnerskie: gdy kupisz przez nie usługę, możemy dostać prowizję. Nie wpływa to na cenę, którą płacisz. BlackPage to nasz własny produkt — zarabiamy na nim bezpośrednio, nie przez afiliację.</p>
+    <p>Kontakt: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+</div>
+{% endblock %}
