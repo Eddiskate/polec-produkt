@@ -20,7 +20,7 @@ products:
     name: home.pl
     category: hosting
     categoryLabel: Hosting
-    summary: Wszystko w jednym: domena, hosting, czasem sklep albo kreator — wygodne, gdy chcesz szybko wystartować.
+    summary: "Wszystko w jednym: domena, hosting, czasem sklep albo kreator — wygodne, gdy chcesz szybko wystartować."
     pros:
       - Duży wybór domen i dodatków
       - Znana marka, prosty start
