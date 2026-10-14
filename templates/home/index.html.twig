@@ -5,12 +5,33 @@
 
 {% block body %}
 <section class="hero">
-    <h1>{{ site_name }}</h1>
-    <p>Nie trać wieczoru na forumowe wojny o hosting. Porównujemy oferty dla małych firm — co działa, czego unikać i kiedy lepiej wziąć stronę pod klucz.</p>
-    <div class="cta-row">
-        <a class="btn btn-primary" href="{{ path('app_products') }}">Porównaj produkty</a>
-        <a class="btn btn-ghost" href="{{ path('app_product_show', {slug: 'blackpage'}) }}">Chcę stronę pod klucz</a>
+    <div class="hero-copy">
+        <h1>Hosting bez forumowych wojen</h1>
+        <p>Porównujemy oferty dla małych firm — co działa, czego unikać i kiedy lepiej wziąć stronę pod klucz.</p>
+        <div class="cta-row">
+            <a class="btn btn-primary" href="{{ path('app_products') }}">Porównaj produkty</a>
+            <a class="btn btn-ghost" href="{{ path('app_product_show', {slug: 'blackpage'}) }}">Chcę stronę pod klucz</a>
+        </div>
     </div>
+    <aside class="hero-panel" aria-label="Podgląd polecanych">
+        <p class="hero-panel-label">Na skróty</p>
+        <ul class="hero-stack">
+            {% for product in featured|slice(0, 4) %}
+                <li>
+                    <a href="{{ path('app_product_show', {slug: product.slug}) }}">
+                        <span class="hero-stack-name">{{ product.name }}</span>
+                        <span class="hero-stack-tag{% if product.ownProduct|default(false) %} is-own{% endif %}">
+                            {% if product.ownProduct|default(false) %}
+                                Pod klucz
+                            {% else %}
+                                {{ product.categoryLabel|default(product.category) }}
+                            {% endif %}
+                        </span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </aside>
 </section>
 
 <section class="section">
