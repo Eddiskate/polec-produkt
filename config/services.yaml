@@ -33,6 +33,11 @@ services:
             $blogApiUrl: '%app.blog.api_url%'
             $blogApiKey: '%app.blog.api_key%'
 
+    App\Controller\PageController:
+        arguments:
+            $blogApiUrl: '%app.blog.api_url%'
+            $blogApiKey: '%app.blog.api_key%'
+
     App\Twig\AppExtension:
         arguments:
             $contactEmail: '%app.contact_email%'
